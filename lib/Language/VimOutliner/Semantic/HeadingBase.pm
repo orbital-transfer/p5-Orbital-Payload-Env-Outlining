@@ -2,7 +2,7 @@ package Language::VimOutliner::Semantic::HeadingBase;
 
 use Moo;
 use Types::Standard qw(ArrayRef InstanceOf);
-use MooX::HandlesVia;
+use Sub::HandlesVia;
 
 use overload
 	'""' => sub { $_[0]->stringify };
