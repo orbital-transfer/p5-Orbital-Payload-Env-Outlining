@@ -3,7 +3,7 @@ package Language::VimOutliner::Info::todo;
 
 use Moo;
 use Language::VimOutliner::Info::yaml;
-use List::AllUtils qw(first);
+use List::Util::MaybeXS qw(first);
 
 has node => (
 	is => 'ro',
